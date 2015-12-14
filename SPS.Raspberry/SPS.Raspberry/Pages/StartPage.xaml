@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="SPS.Raspberry.Pages.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SPS.Raspberry"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="60*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Border Background="#FF005DFF" Grid.Row="0">
+                <TextBlock TextAlignment="Center" Foreground="White"
+                           FontSize="36" VerticalAlignment="Center" HorizontalAlignment="Center">                    
+                    <Run Text="Smart Parking System"/>
+                    <LineBreak/>
+                    <Run Text="2.0"/>
+                </TextBlock>
+            </Border>
+            <Border Background="White" Grid.Row="1">
+                <CaptureElement x:Name="PreviewElement"/>
+            </Border>
+            <StackPanel Grid.Row="2" Margin="50,0,0,0">
+                <TextBlock x:Name="MessageTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"
+                           Text="Smart Parking System"
+                           FontSize="28"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
